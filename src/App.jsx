@@ -23,9 +23,6 @@ function MainApp() {
         console.log(res.data);
         setNetworkCount(res.data);
       });
-      // .catch((error) => {
-      //   console.log("This is the error", error);
-      // });
 
   }, []);
 
