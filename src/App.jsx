@@ -15,16 +15,16 @@ function MainApp() {
   const [networkCount, setNetworkCount] = useRecoilState(notificationsAtom);
   const totalNotificationCount = useRecoilValue(totalNotificationSelector);
 
-  useEffect(() => {
-    console.log("useEffect Triggered");
+  // useEffect(() => {
+  //   console.log("useEffect Triggered");
 
-    axios.get("https://sum-server.100xdevs.com/notifications")
-      .then(res => {
-        console.log(res.data);
-        setNetworkCount(res.data);
-      });
+  //   axios.get("https://sum-server.100xdevs.com/notifications")
+  //     .then(res => {
+  //       console.log(res.data);
+  //       setNetworkCount(res.data);
+  //     });
 
-  }, []);
+  // }, []);
 
 
   return (
